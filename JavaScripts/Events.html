@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS- events</title>
+    <script>
+        function test()
+        {
+            alert("Hello from JS function.");
+        }
+    </script>
+</head>
+<body>
+    <h1>HTEML Event attributes executing JS codeDirectly</h1>
+
+    <input type="button" value="Click Me" 
+      onclick="alert('Hello JS');"  ></button>
+    <hr>
+    <h1>HTML Event Attributes calling JS Functions</h1>
+    <input type="button" value="Click Me" 
+        onclick="test()"></button> <!-- Click event Fired-->
+</body>
+</html>

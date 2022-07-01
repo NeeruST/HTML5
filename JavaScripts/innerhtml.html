@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inner HTML demo</title>
+    <script>
+        function addMenu()
+        {
+            document.getElementById("hello").innerHTML="New Menu";
+            let menu=document.getElementById("men");
+ 
+            let li=document.createElement("li");
+            li.textContent="About Us";
+            menu.appendChild(li);
+            document.getElementById("men")=menu;
+        }
+    </script>
+</head>
+<body>
+    <h1 id="hello">Menu</h1>
+   <ul id="men">
+       <li>Home</li>
+       <li>Products</li>
+       <li>Services</li>
+   </ul>
+   <button onclick="addMenu()">Add New Menu</button>
+</body>
+</html>

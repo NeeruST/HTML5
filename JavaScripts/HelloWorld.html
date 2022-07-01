@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Scripts Embedded in HTML</title>
+
+</head>
+<body>
+    <h1>Java Script Introduction</h1>
+
+    <script lang="javascript">
+        document.writeln("Hellow World from java Script");
+        document.writeln("<h1> hello world from java script")
+            
+        /* java script code same comments methods as java*/
+
+        var a,b,sum;
+
+        name=prompt("enter your name: ");
+
+        a= parseInt(prompt("enter the first integer: ","Enter a number"));
+        console.log(a);
+        b= parseInt(prompt("enter the second integer: ","Enter a number"))
+        console.log(b);
+
+        sum= a+b;
+
+        console.log(sum);
+        console.log(name);
+        document.write("<br>"+"Hello "+name+"<br>");
+        document.writeln("the addition of "+a+" and "+b+ " is: "+sum);
+
+
+        alert("Thank you "+name);
+        alert("The sum of "+a+" and "+b+" is "+sum);
+
+    </script>
+</body>
+</html>
